@@ -1,1 +1,177 @@
 /* Insert your styles here */
+@import url('https://fonts.googleapis.com/css?family=Work+Sans:400,600');
+body
+{
+	margin: 0;
+	background: rgb(65, 65, 65);
+	font-family: 'Work Sans', sans-serif;
+	font-weight: 800;
+}
+
+/* Makes the html / webpage as tall or taller as the browser window */
+html
+{
+    min-height:100vh;
+}
+  
+/* Makes the body as tall or taller as the browser window, less html element's padding */
+body
+{
+    min-height:calc(100vh - 2 * 20px);
+}
+
+/*Styling fr the header*/
+header
+{
+    background: rgb(200, 200, 200);
+    height: 150px;
+    
+}
+
+header img
+{
+    float: left;
+    padding-left: 20px;
+}
+
+header div
+{
+    margin-left: 200px;
+    padding-top: 55px;
+    font-size: 30px;
+}
+
+/*Stylng for the nav bar*/
+nav
+{
+    position: sticky;
+    top: 0;
+    background: #55d6aa;
+    z-index: 5000;
+}
+
+
+nav ul
+{
+    position: sticky;
+    top: 0;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+  
+nav li
+{
+    display: inline-block;
+    margin-left: 70px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    position: relative;
+}
+  
+  nav a
+  {
+    color: #444;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 15px;
+  }
+  
+  nav a:hover
+  {
+    color: #000;
+  }
+  
+  nav a::before
+  {
+    content: '';
+    display: block;
+    height: 5px;
+    background-color: #444;
+    position: absolute;
+    top: 0;
+    width: 0%;
+    transition: all ease-in-out 250ms;
+  }
+  
+  nav a:hover::before
+  {
+    width: 100%;
+  }
+
+  .pimg1, .pimg2, .pimg3, .pimp4{
+    position: relative;
+    opacity:0.70;
+    background-position:center;
+    background-size:cover;
+    background-repeat:no-repeat;
+  
+    /*
+      fixed = parallax
+      scroll = normal
+    */
+    background-attachment:fixed;
+  }
+  
+  .pimg1{
+    background-image:url('./resources/media/cinema1.jpg');
+    min-height:700px;
+  }
+  
+  .pimg2{
+    background-image:url('./resources/media/cinema2.jpg');
+    min-height:400px;
+  }
+  
+  .pimg3{
+    background-image:url('./resources/media/cinema1.jpg');
+    min-height:400px;
+  }
+  
+  .section{
+    text-align:center;
+    padding:50px 80px;
+  }
+  
+  .section-light{
+    background-color:#f4f4f4;
+    color:#666;
+  }
+  
+  .section-dark{
+    background-color:#282e34;
+    color:#ddd;
+  }
+  
+  .ptext{
+    position:absolute;
+    top:50%;
+    width:100%;
+    text-align:center;
+    color:#000;
+    font-size:27px;
+    letter-spacing:8px;
+    text-transform:uppercase;
+  }
+  
+  .ptext .border{
+    background-color:#111;
+    color:#fff;
+    padding:20px;
+  }
+  
+  .ptext .border.trans{
+    background-color:transparent;
+  }
+  
+
+  /*Footer style*/
+  footer
+  {
+    height: 100px;
+    margin-top: 400px;
+    padding: 10px;
+    clear: both;
+    top: 0;
+    background: #14c78b;
+  }
