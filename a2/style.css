@@ -99,7 +99,7 @@ nav li
     width: 100%;
   }
 
-  .pimg1, .pimg2, .pimg3, .pimp4{
+  .pimg1, .pimg2, .pimg3, .pimp4, .pimp5{
     position: relative;
     opacity:0.70;
     background-position:center;
@@ -126,6 +126,11 @@ nav li
   .pimg3{
     background-image:url('./resources/media/cinema1.jpg');
     min-height:400px;
+  }
+
+  .pimg5{
+    background-image:url('./resources/media/cinemaprices.jpg');
+    min-height:600px;
   }
   
   .section{
@@ -163,7 +168,52 @@ nav li
   .ptext .border.trans{
     background-color:transparent;
   }
+
+  .content-prices {
+    border-collapse: collapse;
+    margin-left:auto; 
+    margin-right:auto;
+    font-size: 1.1em;
+    width: 85%;
+    height: 500px;
+    border-radius: 5px 5px 0 0;
+    overflow: hidden;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+  }
   
+  .content-prices thead tr {
+    background-color: #009879;
+    color: #ffffff;
+    text-align: left;
+    font-weight: bold;
+    width: 100px;
+  }
+  
+  .content-prices th,
+  .content-prices td {
+    padding: 12px 15px;
+  }
+  
+  .content-prices tbody tr {
+    border-bottom: 1px solid #dddddd;
+  }
+  
+  .content-prices tbody tr:nth-of-type(even) {
+    background-color: #f3f3f3;
+  }
+
+  .content-prices tbody tr:nth-of-type(odd) {
+    background-color: #d4d4d4;
+  }
+  
+  .content-prices tbody tr:last-of-type {
+    border-bottom: 2px solid #009879;
+  }
+  
+  .content-prices tbody tr.active-row {
+    font-weight: bold;
+    color: #009879;
+  }
 
   /*Footer style*/
   footer
