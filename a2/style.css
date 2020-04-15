@@ -11,6 +11,7 @@ body
 /* Makes the html / webpage as tall or taller as the browser window */
 html
 {
+    scroll-behavior: smooth;
     min-height:100vh;
 }
   
@@ -23,7 +24,7 @@ body
 /*Styling fr the header*/
 header
 {
-    background: rgb(200, 200, 200);
+  background-color: #009879;
     height: 150px;
     
 }
@@ -128,6 +129,10 @@ nav li
     min-height:400px;
   }
 
+  .video-Dolby{
+    width: 85%;
+  }
+
   .pimg5{
     background-image:url('./resources/media/cinemaprices.jpg');
     min-height:600px;
@@ -213,6 +218,89 @@ nav li
   .content-prices tbody tr.active-row {
     font-weight: bold;
     color: #009879;
+  }
+
+  .synopsis-content{
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    width: 95%;
+    height: 700px;
+    border: 2px solid;
+    background-color: #f3f3f3;
+  }
+
+  .synopsis-video{
+    float: right;
+    margin-top: 50px;
+    border: 2px solid #444;
+  }
+
+  .synopsis-plot
+  .synopsis-booking{
+    float: left;
+  }
+  
+  .synopsis-plot h2{
+    position: relative;
+    background-color: #009879;
+    padding: 10px;
+    margin-left: -10px;
+    border-bottom: 2px solid;
+  }
+
+  .synopsis-plot{
+    margin-top: -20px;
+    padding-left: 10px;
+  }
+
+  .synopsis-plot h3
+  {
+    padding: 10px;
+    margin-left: -10px;
+    margin-top: -20px;
+    border-top: 2px solid #444;
+    border-bottom: 2px solid #444;
+    background-color: #bebebe;
+  }
+  
+  .synopsis-booking{
+    margin-top: 350px;
+    padding-left: 10px;
+  }
+
+  .synopsis-booking h2{
+    padding: 10px;
+    margin-left: -10px;
+    margin-top: -24px;
+    border-top: 2px solid #444;
+    border-bottom: 2px solid #444;
+    background-color: #bebebe;
+  }
+
+  .btn-group button {
+    background-color: #55d6aa; /* Green background */
+    border: 2px solid green; /* Green border */
+    padding: 10px 24px; /* Some padding */
+    cursor: pointer; /* Pointer/hand icon */
+    float: left; /* Float the buttons side by side */
+  }
+  
+  .btn-group button:not(:last-child) {
+    border-right: none; /* Prevent double borders */
+  }
+
+  
+  /* Clear floats*/
+  .btn-group:after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+  
+  /* Add a background color on hover */
+  .btn-group button:hover {
+    background-color: #3e8e41;
   }
 
   /*Footer style*/
