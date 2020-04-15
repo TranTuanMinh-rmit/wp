@@ -70,8 +70,8 @@ nav li
     position: relative;
 }
   
-  nav a
-  {
+nav a
+{
     color: #444;
     text-decoration: none;
     text-transform: uppercase;
@@ -100,6 +100,8 @@ nav li
     width: 100%;
   }
 
+
+  /*Styling for About Us + Parallax*/
   .pimg1, .pimg2, .pimg3, .pimp4, .pimp5{
     position: relative;
     opacity:0.70;
@@ -125,7 +127,7 @@ nav li
   }
   
   .pimg3{
-    background-image:url('./resources/media/cinema1.jpg');
+    background-image:url('./resources/media/luxchair.jpg');
     min-height:400px;
   }
 
@@ -174,6 +176,7 @@ nav li
     background-color:transparent;
   }
 
+  /*Styling for Prices*/
   .content-prices {
     border-collapse: collapse;
     margin-left:auto; 
@@ -220,6 +223,56 @@ nav li
     color: #009879;
   }
 
+  /*Styling for Now Showing*/
+  .flexbox-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  .flexbox-item{
+    border-radius: 7px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 700px;
+    height: 640px;
+    margin: 10px;
+    border: 3px solid #333;
+    background-color: #d4d4d4;
+  }
+
+.flexbox-pictures1, .flexbox-pictures2, .flexbox-pictures3, .flexbox-pictures4
+{
+  float: left;
+  margin-top: 20px;
+  margin-left: 5px;
+}
+
+.flexbox-items-body{
+  float: right;
+  height: 640px;
+  width: 440px;
+}
+  .flex-header{
+    font-size: 25px;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: green;
+  }
+
+  .btn-group-2 button {
+    width: 150px;
+    height: 50px;
+    margin-left: 150px;
+    margin-top: 10px;
+    background-color: #55d6aa;
+    border: 2px solid green;
+    border-radius: 5px;
+    padding: 10px 24px;
+    vertical-align: middle;
+  }
+
+  /*Styling for Synopsis*/
   .synopsis-content{
     position: relative;
     margin-left: auto;
@@ -279,17 +332,14 @@ nav li
   }
 
   .btn-group button {
-    background-color: #55d6aa; /* Green background */
-    border: 2px solid green; /* Green border */
-    padding: 10px 24px; /* Some padding */
-    cursor: pointer; /* Pointer/hand icon */
-    float: left; /* Float the buttons side by side */
+    margin: 3px;
+    background-color: #55d6aa;
+    border: 2px solid green;
+    border-radius: 5px;
+    padding: 10px 24px;
+    cursor: pointer;
+    float: left; 
   }
-  
-  .btn-group button:not(:last-child) {
-    border-right: none; /* Prevent double borders */
-  }
-
   
   /* Clear floats*/
   .btn-group:after {
@@ -306,10 +356,9 @@ nav li
   /*Footer style*/
   footer
   {
-    height: 100px;
     margin-top: 400px;
     padding: 10px;
     clear: both;
     top: 0;
     background: #14c78b;
-  }
+  }  
