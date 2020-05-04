@@ -21,7 +21,7 @@ body
     min-height:calc(100vh - 2 * 20px);
 }
 
-/*Styling fr the header*/
+/*Styling for the header*/
 header
 {
   background-color: #009879;
@@ -59,47 +59,31 @@ nav ul
     margin: 0;
     padding: 0;
     list-style: none;
+    background: #55d6aa;
+    z-index: 5000;
 }
   
 nav li
 {
     display: inline-block;
-    margin-left: 70px;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    position: relative;
+    padding: 20px;
+    padding-left: 60px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 15px;
 }
-  
-nav a
-{
-    color: #444;
+a.active, a:hover {
+  background-color: #009879;
+  transition: all ease-in-out 400ms;
+}
+
+nav a{
+    padding: 20px 30px;
+    color: #333;
     text-decoration: none;
     text-transform: uppercase;
     font-size: 15px;
   }
-  
-  nav a:hover
-  {
-    color: #000;
-  }
-  
-  nav a::before
-  {
-    content: '';
-    display: block;
-    height: 5px;
-    background-color: #444;
-    position: absolute;
-    top: 0;
-    width: 0%;
-    transition: all ease-in-out 250ms;
-  }
-  
-  nav a:hover::before
-  {
-    width: 100%;
-  }
-
 
   /*Styling for About Us + Parallax*/
   .pimg1, .pimg2, .pimg3, .pimp4, .pimp5{
@@ -234,7 +218,7 @@ nav a
     border-radius: 7px;
     margin-left: auto;
     margin-right: auto;
-    width: 700px;
+    width: 620px;
     height: 640px;
     margin: 10px;
     border: 3px solid #333;
@@ -244,26 +228,29 @@ nav a
 .flexbox-pictures1, .flexbox-pictures2, .flexbox-pictures3, .flexbox-pictures4
 {
   float: left;
-  margin-top: 20px;
+  margin-top: 10px;
   margin-left: 5px;
 }
 
 .flexbox-items-body{
-  float: right;
+  display: grid;
+  grid-template-columns:2fr 1fr;
   height: 640px;
   width: 440px;
 }
   .flex-header{
+    text-align: left;
     font-size: 25px;
     padding: 10px;
-    border-radius: 5px;
+    border-radius: 4px;
     background-color: green;
   }
 
   .btn-group-2 button {
+    float: left;
     width: 150px;
     height: 50px;
-    margin-left: 150px;
+    padding-top: -100px; 
     margin-top: 10px;
     background-color: #55d6aa;
     border: 2px solid green;
@@ -361,4 +348,4 @@ nav a
     clear: both;
     top: 0;
     background: #14c78b;
-  }  
+  }

@@ -10,6 +10,7 @@
     <link id='stylecss' type="text/css" rel="stylesheet" href="style.css">
 
     <script src='../wireframe.js'></script>
+    <script src='../a3/script.js'></script>
   </head>
 
   <body>
@@ -20,14 +21,13 @@
     </header>
 
     <nav>
-      <ul>
-        <li><a href="#">Home</a></li>
+      <ul class="nav-links" onclick="myFunction(event)" id="navList">
+        <li><a class="active" href="#">Home</a></li>
         <li><a href="#section-aboutus">About Us</a></li>
         <li><a href="#section-prices">Prices</a></li>
         <li><a href="#section-nowshowing">Now Showing</a></li>
       </ul>
     </nav>
-
     <main>
       <section id="section-aboutus">
         <div class="pimg1">
@@ -157,11 +157,11 @@
 
         <div class="flexbox-container">
           <div class="flexbox-item flexbox-item-1">
-            <div class="flexbox-pictures1">
-              <img height="400px" width="250px" src="resources/media/endgameposter.jpg" alt="">
-            </div>
+            <div class="flex-header">Avengers: Endgame</br>  Rated: PG-13</div>
             <div class="flexbox-items-body">
-              <div class="flex-header">Avengers: Endgame</br>  PG-13</div>
+              <div class="flexbox-pictures1">
+                <img height="400px" width="250px" src="resources/media/endgameposter.jpg" alt="">
+              </div>
               <div class="btn-group-2">
                 <button href="#">Wed - 9pm</button>
                 <button href="#">Thu - 9pm</button>
@@ -171,12 +171,13 @@
               </div>
             </div>
           </div>
+
           <div class="flexbox-item flexbox-item-2">
-            <div class="flexbox-pictures2">
-              <img height="400px" width="250px" src="resources/media/dumboposter.jpg" alt="">
-            </div>
+            <div class="flex-header">Dumbo</br>  Rated: PG</div>
             <div class="flexbox-items-body">
-              <div class="flex-header">Dumbo</br>  PG</div>
+              <div class="flexbox-pictures2">
+                <img height="400px" width="250px" src="resources/media/dumboposter.jpg" alt="">
+              </div>
               <div class="btn-group-2">
                 <button href="#">Mon - 12pm</button>
                 <button href="#">Tue - 12pm</button>
@@ -188,12 +189,13 @@
               </div>
             </div>
           </div>
+
           <div class="flexbox-item flexbox-item-3">
-            <div class="flexbox-pictures1">
-              <img height="400px" width="250px" src="resources/media/thpposter.jpg" alt="">
-            </div>
+            <div class="flex-header">The Happy Prince</br>  Rated: R</div>
             <div class="flexbox-items-body">
-              <div class="flex-header">The Happy Prince</br>  R</div>
+              <div class="flexbox-pictures1">
+                <img height="400px" width="250px" src="resources/media/thpposter.jpg" alt="">
+              </div>
               <div class="btn-group-2">
                 <button href="#">Wed - 12pm</button>
                 <button href="#">Thu - 12pm</button>
@@ -203,12 +205,13 @@
               </div>
             </div>
           </div>
+
           <div class="flexbox-item flexbox-item-4">
-            <div class="flexbox-pictures1">
-              <img height="400px" width="250px" src="resources/media/tewposter.jpg" alt="">
-            </div>
+            <div class="flex-header">Top End Wedding</br>  Rated: PG-13</div>
             <div class="flexbox-items-body">
-              <div class="flex-header">Top End Wedding</br>  PG-13</div>
+              <div class="flexbox-pictures1">
+                <img height="400px" width="250px" src="resources/media/tewposter.jpg" alt="">
+              </div>
               <div class="btn-group-2">
                 <button href="#">Mon - 6pm</button>
                 <button href="#">Tue - 6pm</button>
@@ -247,7 +250,7 @@
                 <button href="#">Sunday - 6pm</button>
               </div>
           </div>
-      </div>
+        </div>
       </section>
       
     </main>
