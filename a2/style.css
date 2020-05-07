@@ -269,28 +269,19 @@ nav a{
     border: 2px solid;
     background-color: #f3f3f3;
   }
-
-  .synopsis-video{
-    float: right;
-    margin-top: 50px;
-    border: 2px solid #444;
-  }
-
-  .synopsis-plot
-  .synopsis-booking{
-    float: left;
-  }
   
-  .synopsis-plot h2{
+  .synopsis-content h2{
     position: relative;
     background-color: #009879;
+    margin-top: auto;
     padding: 10px;
-    margin-left: -10px;
     border-bottom: 2px solid;
   }
 
   .synopsis-plot{
-    margin-top: -20px;
+    display: grid;
+    grid-template-columns:2fr 1fr;
+    margin-top: auto;
     padding-left: 10px;
   }
 
@@ -303,9 +294,13 @@ nav a{
     border-bottom: 2px solid #444;
     background-color: #bebebe;
   }
+
+  .synopsis-video{
+    margin-top: -20px;
+  }
   
   .synopsis-booking{
-    margin-top: 350px;
+    margin-top: 20px;
     padding-left: 10px;
   }
 

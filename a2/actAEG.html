@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Now Showing: Avengers End Game</title>
+
+        <!-- Keep wireframe.css for debugging, add your css to style.css -->
+        <link id='wireframecss' type="text/css" rel="stylesheet" href="../wireframe.css" disabled> 
+        <link id='stylecss' type="text/css" rel="stylesheet" href="style.css">
+
+        <script src='../wireframe.js'></script>
+        <script src='../a3/script.js'></script>
+    </head>
+    <body>
+        <header>
+            <img src='resources/media/CineMaxlogo.png' alt='CineMax logo' height="150px" width="150px"/>
+            <div>CineMax</div>
+        </header>
+    
+        <nav>
+            <ul class="nav-links" onclick="myFunction(event)" id="navList">
+            <li><a href="../a2/index.html">Home</a></li>
+            <li><a href="../a2/index.html#section-aboutus">About Us</a></li>
+            <li><a href="../a2/index.html#section-prices">Prices</a></li>
+            <li><a class="active" href="../a2/index.html#section-nowshowing">Now Showing</a></li>
+            </ul>
+        </nav>
+
+        <div class="synopsis-content">
+            <h2>Avengers: Endgame</h2>
+            <div class="synopsis-plot">
+                <div class="sypnosis-description">
+                    <h3>Rated: PG-13</h3>
+                    <p>After the devastating events of Avengers: Infinity War (2018), the universe is in ruins. With the help of remaining allies, the Avengers assemble once more in order to reverse Thanos' actions and restore balance to the universe.</p>
+                </div>
+                
+                <div class="synopsis-video">
+                    <iframe width="800" height="420" src="https://www.youtube.com/embed/TcMBFSGVi1c" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+            </div>
+            <div class="synopsis-booking">
+                <h2>Make a booking:</h2>
+                <div class="btn-group">
+                  <button href="#">Wednesday - 9pm</button>
+                  <button href="#">Thursday - 9pm</button>
+                  <button href="#">Friday - 9pm</button>
+                  <button href="#">Saturday - 6pm</button>
+                  <button href="#">Sunday - 6pm</button>
+                </div>
+            </div>
+        </div>
+
+        
+    </body>
+
+
+    <footer>
+        <div>&copy;<script>
+            document.write(new Date().getFullYear());
+        </script> Tran Tuan Ming, s3804812. Last modified <?= date ("Y F d  H:i", filemtime($_SERVER['SCRIPT_FILENAME'])); ?>.</div>
+        <div>
+        <h4>Contacts</h4>
+        <p>Email: contact@cinemax.cn.us</p>
+        <p>Phone: +1-202-555-0171</p>
+        <p>Address: 897 High Noon Lane</br> Phoenix, AZ 85021</p>
+        </div>
+        <div>Disclaimer: This website is not a real website and is being developed as part of a School of Science Web Programming course at RMIT University in Melbourne, Australia.</div>
+        <div><a href="https://github.com/TranTuanMinh-rmit/wp">Github repository</a></div>
+        <div><button id='toggleWireframeCSS' onclick='toggleWireframe()'>Toggle Wireframe CSS</button></div>
+    </footer>
+</html>
