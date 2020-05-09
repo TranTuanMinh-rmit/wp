@@ -239,11 +239,24 @@ nav a{
   width: 440px;
 }
   .flex-header{
+    cursor: pointer;
     text-align: left;
     font-size: 25px;
     padding: 10px;
-    border-radius: 4px;
+    border-radius: 2px;
     background-color: green;
+    border: 2px solid #333;
+    text-decoration: none;
+  }
+
+  .flex-header-text{
+    color: black;
+    text-decoration: none;
+  }
+
+  .flex-header-text:hover{
+    background-color: #009879;
+    transition: ease-in-out 250ms;
   }
 
   .btn-group-2 button {
@@ -322,6 +335,81 @@ nav a{
     cursor: pointer;
     float: left; 
   }
+
+  /*Booking Form*/
+  .booking-form{
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    width: 95%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    height: 550px;
+    border: 2px solid;
+    background-color: #f3f3f3;
+  }
+
+  .booking-header{
+    background-color: #009879;
+    border-bottom: 2px solid;
+    padding: 7px;
+    position: relative;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    font-size: 30px;
+  }
+
+  .standard-header, .first-header{
+    padding-left: 55%;
+  }
+
+  .booking-time{
+    border-bottom: 2px solid;
+    position: relative;
+    padding: 5px;
+    background-color: #bebebe;
+    font-size: large;
+  }
+
+  .booking-body{
+    display: grid;
+    grid-template-columns:1fr 1fr;
+  }
+
+  .booking-tickets{
+    float: left;
+    border-bottom: 2px solid;
+    border-right: 2px solid;
+  }
+
+  .booking-tickets-standard{
+    padding-top: 10px;
+    padding-right: 50px;
+  }
+
+  .standard-body{
+    float: right;
+    text-align: right;
+  }
+
+  .booking-tickets-firstclass{
+    padding-top: 10px;
+    padding-right: 50px;
+  }
+
+  .firstclass-body{
+    float: right;
+    text-align: right;
+    padding-bottom: 20px;
+  }
+
+  .booking-customerid{
+    float: right;
+    padding-top: 50px;
+    padding-right: 10%;
+    text-align: right;
+    border-bottom: 2px solid;
+  }
   
   /* Clear floats*/
   .btn-group:after {
@@ -333,6 +421,11 @@ nav a{
   /* Add a background color on hover */
   .btn-group button:hover {
     background-color: #3e8e41;
+  }
+
+  input[pattern]:invalid {
+    border:2px red solid;
+    background-color:#fee;
   }
 
   /*Footer style*/

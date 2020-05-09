@@ -10,7 +10,7 @@
         <link id='stylecss' type="text/css" rel="stylesheet" href="style.css">
 
         <script src='../wireframe.js'></script>
-        <script src='../a3/script.js'></script>
+        <script src='../a3/script.js' async></script>
     </head>
     <body>
         <header>
@@ -40,14 +40,108 @@
                 </div>
             </div>
             <div class="synopsis-booking">
-                <h2>Make a booking:</h2>
+                <h2>Time available for booking:</h2>
                 <div class="btn-group">
-                  <button href="#">Wednesday - 9pm</button>
-                  <button href="#">Thursday - 9pm</button>
-                  <button href="#">Friday - 9pm</button>
-                  <button href="#">Saturday - 6pm</button>
-                  <button href="#">Sunday - 6pm</button>
+                  <button href="#" onclick='document.getElementById("time-change").innerHTML = "Wednesday - 9pm"'>Wednesday - 9pm</button>
+                  <button href="#" onclick='document.getElementById("time-change").innerHTML = "Thursday - 9pm"'>Thursday - 9pm</button>
+                  <button href="#" onclick='document.getElementById("time-change").innerHTML = "Friday - 9pm"'>Friday - 9pm</button>
+                  <button href="#" onclick='document.getElementById("time-change").innerHTML = "Saturday - pm"'>Saturday - 6pm</button>
+                  <button href="#" onclick='document.getElementById("time-change").innerHTML = "Sunday - 6pm"'>Sunday - 6pm</button>
                 </div>
+            </div>
+        </div>
+
+        <div class="booking-form">
+            <div class="booking-header">
+                <p class="movie-title">Avengers: End Game</p>
+            </div>
+            <div class="booking-time">
+                <p id="time-change">Please choose a time</p>
+            </div>
+            <div class="booking-body">
+                <div class="booking-tickets">
+                    <div class="booking-tickets-standard">
+                        <div class="standard-header">
+                            <p>Standard</p>
+                        </div>
+                        <div class="standard-body">
+                            <form class="standard-adult">
+                                <label for="quantity">Adults:</label>
+                                <input type="number" id="quantity-STA" name="quantity" min="1" max="10" style="width: 200px" onchange="changeCost()">
+                            </form>
+
+                            <form class="standard-concession">
+                                <label for="quantity">Concession:</label>
+                                <input type="number" id="quantity-STP" name="quantity" min="1" max="10" style="width: 200px" onchange="changeCost()">
+                            </form>
+
+                            <form class="standard-children">
+                                <label for="quantity">Children:</label>
+                                <input type="number" id="quantity-STC" name="quantity" min="1" max="10" style="width: 200px" onchange="changeCost()">
+                            </form>
+                        </div>
+                    </div></br></br></br>
+
+                    <div class="booking-tickets-firstclass">
+                        <div class="first-header">
+                            <p>First Class</p>
+                        </div>
+                        <div class="firstclass-body">
+                            <form class="1st-adult">
+                                <label for="quantity">Adults:</label>
+                                <input type="number" id="quantity-FCA" name="quantity" min="1" max="10" style="width: 200px" onchange="changeCost()">
+                            </form>
+
+                            <form class="1st-concession">
+                                <label for="quantity">Concession:</label>
+                                <input type="number" id="quantity-FCP" name="quantity" min="1" max="10" style="width: 200px" onchange="changeCost()">
+                            </form>
+
+                            <form class="1st-children">
+                                <label for="quantity">Children:</label>
+                                <input type="number" id="quantity-FCC" name="quantity" min="1" max="10" style="width: 200px" onchange="changeCost()">
+                            </form>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="booking-customerid":>
+                    <form id="cust-name">
+                        <label for="fname">Full Name:</label>
+                        <input type="text" id="fname" name="fname" pattern='[a-zA-Z] [a-zA-Z ]+'><br><br>
+                    </form>
+
+                    <form id="cust-email">
+                        <label for="email">Enter your email:</label>
+                        <input type="email" id="email" name="email"><br><br>
+                    </form>
+
+                    <form id="cust-phone">
+                        <label for="phone">Phone number:</label>
+                        <input type="tel" id="phone" name="phone" pattern="[0-4]{2} [0-9]{4} [0-9]{4}" ><br><br>
+                    </form>
+
+                    <form id="cust-credit">
+                        <label for="credit">Credit card:</label>
+                        <input type="tel" id="credit" name="credit" placeholder="xxxx xxxx xxxx xxxx" pattern="[0-9]{4} [0-9]{4} [0-9]{4}"><br><br>
+                    </form>
+
+                    <form id="cust-expiry">
+                        <label for="expiry">Expiry:</label>
+                        <input type="month" id="expiry" name="expiry">
+                    </form>
+                </div>
+            </div>
+
+            <div class="booking footer">
+                <p>
+                    <label>Total Price</label>
+                    $<span id="total-price"></span>
+                </p>
+
+                <div id="submit_order">
+                    <input type="submit" id="submit" value="Book Tickets" />
+                  </div>
             </div>
         </div>
 
