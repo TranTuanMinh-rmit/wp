@@ -207,6 +207,15 @@ nav a{
     color: #009879;
   }
 
+  .readmore{
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  #more{
+    display: none;
+  }
+
   /*Styling for Now Showing*/
   .flexbox-container{
     display: flex;
@@ -344,7 +353,7 @@ nav a{
     width: 95%;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
-    height: 550px;
+    height: 720px;
     border: 2px solid;
     background-color: #f3f3f3;
   }
@@ -364,6 +373,8 @@ nav a{
   }
 
   .booking-time{
+    display: grid;
+    grid-template-columns:1fr 8fr;
     border-bottom: 2px solid;
     position: relative;
     padding: 5px;
@@ -374,6 +385,10 @@ nav a{
   .booking-body{
     display: grid;
     grid-template-columns:1fr 1fr;
+    height: 450px;
+  }
+  .booked-hour, .booked-day{
+    text-align: left;
   }
 
   .booking-tickets{
@@ -393,7 +408,7 @@ nav a{
   }
 
   .booking-tickets-firstclass{
-    padding-top: 10px;
+    padding-top: 100px;
     padding-right: 50px;
   }
 
@@ -410,7 +425,17 @@ nav a{
     text-align: right;
     border-bottom: 2px solid;
   }
+
+  .total-cost{
+    padding-left: 20px;
+    font-size: large;
+  }
   
+  .submit-button{
+    padding-left: 20px;
+    padding-bottom: 10px;
+  }
+
   /* Clear floats*/
   .btn-group:after {
     content: "";

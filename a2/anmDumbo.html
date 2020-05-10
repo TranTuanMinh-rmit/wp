@@ -3,7 +3,7 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Now Showing: Avengers End Game</title>
+        <title>Now Showing: Dumbo (2019)</title>
 
         <!-- Keep wireframe.css for debugging, add your css to style.css -->
         <link id='wireframecss' type="text/css" rel="stylesheet" href="../wireframe.css" disabled> 
@@ -28,25 +28,28 @@
         </nav>
 
         <div class="synopsis-content">
-            <h2>Avengers: Endgame</h2>
+            <h2>Dumbo (2019)</h2>
             <div class="synopsis-plot">
                 <div class="sypnosis-description">
-                    <h3>Rated: PG-13</h3>
-                    <p>After the devastating events of Avengers: Infinity War (2018), the universe is in ruins. With the help of remaining allies, the Avengers assemble once more in order to reverse Thanos' actions and restore balance to the universe.</p>
+                    <h3>Rated: PG</h3>
+                    <p>Struggling circus owner Max Medici enlists a former star and his two children to care for Dumbo, a baby elephant born with oversized ears. When the family discovers that the animal can fly, it soon becomes the main attraction<span id="dots">...</span><span id="more"> -- bringing in huge audiences and revitalizing the run-down circus. The elephant's magical ability also draws the attention of V.A. Vandevere, an entrepreneur who wants to showcase Dumbo in his latest, larger-than-life entertainment venture.</span></p>
+                    <a onclick="myReadFunction()" id="readmore">Read more</a>
                 </div>
                 
                 <div class="synopsis-video">
-                    <iframe width="800" height="420" src="https://www.youtube.com/embed/TcMBFSGVi1c" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <iframe width="800" height="420" src="https://www.youtube.com/embed/7NiYVoqBt-8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                 </div>
             </div>
             <div class="synopsis-booking">
                 <h2>Time available for booking:</h2>
                 <div class="btn-group">
-                    <button href="#" onclick='document.getElementById("booked-day").innerHTML = "WED", document.getElementById("booked-hour").innerHTML = "T21"'>Wednesday - 9pm</button>
-                    <button href="#" onclick='document.getElementById("booked-day").innerHTML = "THU", document.getElementById("booked-hour").innerHTML = "T21"'>Thursday - 9pm</button>
-                    <button href="#" onclick='document.getElementById("booked-day").innerHTML = "FRI", document.getElementById("booked-hour").innerHTML = "T21"'>Friday - 9pm</button>
-                    <button href="#" onclick='document.getElementById("booked-day").innerHTML = "SAT", document.getElementById("booked-hour").innerHTML = "T18"'>Saturday - 6pm</button>
-                    <button href="#" onclick='document.getElementById("booked-day").innerHTML = "SUN", document.getElementById("booked-hour").innerHTML = "T18"'>Sunday - 6pm</button>
+                    <button href="#" onclick='document.getElementById("booked-day").innerHTML = "MON", document.getElementById("booked-hour").innerHTML = "T12"'>Monday - 12pm</button>
+                    <button href="#" onclick='document.getElementById("booked-day").innerHTML = "TUE", document.getElementById("booked-hour").innerHTML = "T12"'>Tuesday - 12pm</button>
+                    <button href="#" onclick='document.getElementById("booked-day").innerHTML = "WED", document.getElementById("booked-hour").innerHTML = "T18"'>Wednesday - 6pm</button>
+                    <button href="#" onclick='document.getElementById("booked-day").innerHTML = "THU", document.getElementById("booked-hour").innerHTML = "T18"'>Thursday - 6pm</button>
+                    <button href="#" onclick='document.getElementById("booked-day").innerHTML = "FRI", document.getElementById("booked-hour").innerHTML = "T18"'>Friday - 6pm</button>
+                    <button href="#" onclick='document.getElementById("booked-day").innerHTML = "SAT", document.getElementById("booked-hour").innerHTML = "T12"'>Saturday - 12pm</button>
+                    <button href="#" onclick='document.getElementById("booked-day").innerHTML = "SUN", document.getElementById("booked-hour").innerHTML = "T12"'>Sunday - 12pm</button>
                 </div>
             </div>
         </div>
@@ -54,7 +57,7 @@
         <div class="booking-form">
             <form class="booking-form-form" action="https://titan.csit.rmit.edu.au/~e54061/wp/lunardo-formtest.php" method="POST">
                 <div class="booking-header">
-                    <p class="movie-title" name="movie[id]">Avengers: End Game</p>
+                    <p class="movie-title" name="movie[id]">Dumbo (2019)</p>
                 </div>
                 <div class="booking-time">
                     <p id="booked-day">Please choose a time</p>

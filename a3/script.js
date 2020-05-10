@@ -8,12 +8,12 @@ function myFunction(e) {
 
 function changeCost() {
   //Input call//
-  var inputSTA = document.getElementById("quantity-STA").value;
-  var inputSTP = document.getElementById("quantity-STP").value;
-  var inputSTC = document.getElementById("quantity-STC").value;
-  var inputFCA = document.getElementById("quantity-FCA").value;
-  var inputFCP = document.getElementById("quantity-FCP").value;
-  var inputFCC = document.getElementById("quantity-FCC").value;
+  var inputSTA = document.getElementById("seats[STA]").value;
+  var inputSTP = document.getElementById("seats[STP]").value;
+  var inputSTC = document.getElementById("seats[STC]").value;
+  var inputFCA = document.getElementById("seats[FCA]").value;
+  var inputFCP = document.getElementById("seats[FCP]").value;
+  var inputFCC = document.getElementById("seats[FCC]").value;
   //Prices//
   var priceSTA = 19.80;
   var priceSTP = 17.50;
@@ -25,4 +25,20 @@ function changeCost() {
   var payment = ((inputSTA * priceSTA) + (inputSTP * priceSTP) + (inputSTC * priceSTC) + (inputFCA * priceFCA) + (inputFCP * priceFCP)+ (inputFCC * priceFCC)).toFixed(2);
   payment = payment.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
   document.getElementById('total-price').innerHTML = payment;
+}
+
+function myReadFunction() {
+  var dots = document.getElementById("dots");
+  var moreText = document.getElementById("more");
+  var btnText = document.getElementById("readmore");
+
+  if (dots.style.display === "none") {
+    dots.style.display = "inline";
+    btnText.innerHTML = "Read more";
+    moreText.style.display = "none";
+  } else {
+    dots.style.display = "none";
+    btnText.innerHTML = "Read less";
+    moreText.style.display = "inline";
+  }
 }
